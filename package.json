@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "mv ./out/_next ./out/next && cd ./out && grep -rl '/_next' * | xargs sed -i 's|/_next|/next|g'"
   },
   "dependencies": {
     "next": "12.1.5",
@@ -14,6 +16,8 @@
     "react-dom": "18.0.0"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.181",
+    "@types/firefox-webext-browser": "^94.0.1",
     "@types/node": "17.0.24",
     "@types/react": "18.0.5",
     "@types/react-dom": "18.0.1",
