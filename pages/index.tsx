@@ -5,7 +5,7 @@ const Home: NextPage = () => {
     <main>
       <section>
         <h1>Hello!</h1>
-        <p>This extension was built with Next.js. 😎</p>
+        <p>This is a Next.js application. 😎</p>
       </section>
     </main>
   );
